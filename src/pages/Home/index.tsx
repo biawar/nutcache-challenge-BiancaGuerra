@@ -24,20 +24,14 @@ function Home() {
             className="nutcache-img" />
 
             <div className="buttons-container">
-                {/* <Link to="/new-registration" className="new-registration"> */}
-                <a className="new-registration">
-                    {/* <img src={registrationIcon} alt="NewRegistration" className="registrationicon-img" /> */}
+                <Link to="/register-employee" className="new-registration">
                     <FaPlus/>
                     New Registration
-                </a>
-                {/* </Link> */}
-                {/* <Link to="/list-of-employee" className="list-of-employee"> */}
-                <a className="list-of-employee">
-                {/* <img src={listOfEmployee} alt="List of Employer" className="listofemployee-img"/> */}
+                </Link>
+                <Link to="/employee-list" className="list-of-employee">
                 <FaClipboardList/>
                     List of Employee
-                </a> 
-                {/* </Link> */}
+                </Link> 
             </div>
         </div>
     </div>
