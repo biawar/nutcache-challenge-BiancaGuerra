@@ -4,7 +4,12 @@
     max-width: 100%;
 }
 
-.back-text {
+#page-employee-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+/* .back-text {
     font-size: 1.8rem;
     padding-left: 1.4rem;
     font-weight: 700;
@@ -49,4 +54,110 @@
     line-height: 4.2rem;
     padding-left: 1.5%;
     color: whitesmoke;
+} */
+
+
+
+.employee-item {
+    background: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+}
+
+.employee-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.employee-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.employee-item header div {
+    margin-left: 2.4rem;
+}
+
+.employee-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.employee-item header div span {
+    font: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+}
+
+.employee-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+.employee-item footer {
+    padding: 3.2rem 2rem;
+    background: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.employee-item footer p strong {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    display: block;
+}
+
+.employee-item footer button {
+    width: 18rem;
+    height: 5rem;
+    background: var(--color-primary-lighter);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius:0.8rem;
+    cursor:pointer;
+    font: 700 1.4rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.2s;
+    margin-left: 1rem;
+}
+
+.employee-item footer button:hover {
+    background: var(--color-primary-dark);
+}
+
+@media (min-width: 700px) {
+    .employee-item header,
+    .employee-item footer{
+        padding: 3.2rem;
+    }
+    
+    .employee-item > p {
+        padding: 0 3.2rem;
+    }
+
+    .employee-item footer p strong {
+        display: initial;
+        margin-left: 1.6rem;
+    }
+
+    .employee-item footer button {
+        width: 24.5rem;
+        font-size: 1.6rem;
+        justify-content: center;
+    }
+
+    .employee-item footer button img {
+        margin-right: 1.6rem;
+    }
 }

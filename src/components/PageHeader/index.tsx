@@ -3,6 +3,8 @@ import React from 'react';
 import { FaArrowLeft, FaUsers } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+import './styles.css';
+
 interface PageHeaderProps {
     title: string;
 }
@@ -18,7 +20,6 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
             </div>
 
             <div className="header-content">
-                <FaUsers color="whitesmoke" size="4.5rem"/>
                 <strong>{props.title}</strong>  
             </div>
             </header>   

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaArrowLeft, FaUsers } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 
 import PageHeader from '../../components/PageHeader';
 
@@ -10,7 +10,7 @@ import './styles.css';
 function EmployeeList(){
     return(
         <div id="page-employee-list" className="container">
-            <PageHeader title="Employer Title"/> 
+            <PageHeader title="Employee List"/> 
             <main>
                <article className="employee-item">
                 <header>
@@ -21,11 +21,21 @@ function EmployeeList(){
                    </div>
                 </header>
                 <p>
-                    Birth Date: 31/05
-                    Gender: F
-                    Email: bia@nutcache.com.br
-                    CPF: 12345678-12
+                    Birth Date: 31/05<br/>
+                    Gender: F<br/>
+                    Email: bia@nutcache.com.br<br/>
+                    CPF: 12345678-12<br/>
                 </p>
+                <footer>
+                <button className="button-edit" type="button">
+                    <FaEdit color="white" size="3rem"/>
+                    Editar
+                </button>
+                <button className="employee-remove" type="button">
+                    <FaTrash color="white" size="3rem"/>
+                    Apagar
+                </button>
+                </footer>
                 </article> 
             </main>
         
